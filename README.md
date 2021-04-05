@@ -14,3 +14,10 @@ $ conda install -y pytorch torchvision cudatoolkit=10.1 -c pytorch
 $ # conda install pytorch torchvision cpuonly -c pytorch
 $ pip install datasets transformers
 ```
+
+## Get the Data
+
+To get the data run
+```bashh
+$ make get_data
+```
