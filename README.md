@@ -12,5 +12,5 @@ Then activate the environment and install your appropriate version of [PyTorch](
 ```bash
 $ conda install -y pytorch torchvision cudatoolkit=10.1 -c pytorch
 $ # conda install pytorch torchvision cpuonly -c pytorch
-$ pip install transformers
+$ pip install datasets transformers
 ```
