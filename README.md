@@ -18,6 +18,20 @@ $ pip install datasets transformers
 ## Get the Data
 
 To get the data run
-```bashh
+```bash
 $ make get_data
+```
+
+## To estimate an N-gram model
+First build the library in the kenlm submodule
+```bash
+$ cd kenlm
+$ mkdir -p build
+$ cd build
+$ cmake ..
+$ make -j 4
+```
+then estimate the model from the wikitext 103 dataset
+```bash
+bin/lmplz -o 5 <src/wikitext-103/wiki.train.tokens >wiki.arpa
 ```

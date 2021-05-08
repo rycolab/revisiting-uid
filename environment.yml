@@ -21,3 +21,5 @@ dependencies:
     - rpy2
     - tzlocal
     - simplegeneric
+    - transformers
+    - https://github.com/kpu/kenlm/archive/master.zip

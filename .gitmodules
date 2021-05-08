@@ -1,0 +1,3 @@
+[submodule "kenlm"]
+	path = kenlm
+	url = https://github.com/kpu/kenlm.git
