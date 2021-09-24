@@ -2,22 +2,17 @@
 
 ## Install Dependencies
 
-Create a conda environment with
+Install requirements via pip
 ```bash
-$ conda env create -f environment.yml
-```
-Then activate the environment and install your appropriate version of [PyTorch](https://pytorch.org/get-started/locally/).
-```bash
-$ conda install -y pytorch torchvision cudatoolkit=10.1 -c pytorch
-$ # conda install pytorch torchvision cpuonly -c pytorch
-$ pip install datasets transformers
+$ pip install -r requirements.txt
 ```
 
 ## Get the Data
 
 To get the data run
 ```bash
-$ make get_data
+$ cd src
+bash pull_data.sh
 ```
 Note that this does not include the Dundee corpus, for which the original authors have to be contacted!
 
@@ -35,3 +30,5 @@ then estimate the model from the wikitext 103 dataset
 cat {data-dir}/wikitext-103/wiki.train.tokens | awk '!/=\s*/' | awk NF > /tmp/wiki.train.tokens.clean
 bin/lmplz -o 5 --skip_symbols < /tmp/wiki.train.tokens.clean >wiki.arpa
 ```
+
+You can then find the entire analysis pipeline in `src/revisiting-uid.ipynb`

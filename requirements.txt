@@ -1,0 +1,13 @@
+numpy
+pandas
+nltk
+notebook
+matplotlib
+ipdb
+rpy2
+tzlocal
+simplegeneric
+transformers
+gdown
+mosestokenizer
+scipy
